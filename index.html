@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&display=swap');
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-form">
+        <div class="company-logo">
+            <img src="logo.jpg" class="img1">
+            <p>Lorem Ipsum is simply dummy<br>text of the printing<br>and typesetting industry.</p>
+        </div>
+        <div class="form" autocomplete="on">
+            <div>
+                <p style="color:#4f4f4f;">Create An Account</p>
+                <img src="user.jpg" class="img2">
+                <p style="color: #aca6a6;">Sign Up Continue</p>
+            </div>
+            <form class="flex" id="signup-form">
+                <div class="in">
+                    <input type="text" name="name" id="user" placeholder="Name" value="" >
+                    <label class="icon">
+                        <span class="fa fa-user"></span>
+                    </label>
+                    <span id="useralt" class="span"></span>
+                </div>
+
+                <div class="in">
+                    <input type="text" name="surname" id="surname" placeholder="Surname" value="" >
+                    <label class="icon">
+                        <span class="fa fa-user"></span>
+                    </label>
+                    <span id="surnamealt" class="span"></span>
+                </div>
+
+                <div class="in">
+                    <input type="text" name="user-id" id="user_id" placeholder="User ID" value="" >
+                    <label class="icon">
+                        <span class="fa fa-address-book"></span>
+                    </label>
+                    <span id="user_idalt" class="span"></span>
+                </div>
+
+                <div class="in">
+                    <input type="email" name="email" id="email" placeholder="Email" value="">
+                    <label class="icon">
+                        <span class="fa fa-envelope"></span>
+                    </label>
+                    <span id="emailalt" class="span"></span>
+                </div>
+
+                <div class="in">
+                    <input type="email" name="recovery-email" id="recovery_email" placeholder="Recovery Email" value="">
+                    <label class="icon">
+                        <span class="fa fa-envelope"></span>
+                    </label>
+                    <span id="recovery_emailalt" class="span"></span>
+                </div>
+
+                <div class="in">
+                    <input type="text" name="password" id="password" placeholder="Password" value="">
+                    <label class="icon">
+                        <span class="fa fa-lock"></span>
+                    </label>
+                    <span id="passwordalt" class="span"></span>
+                </div>
+
+                <div class="in">
+                    <input type="password" name="retype-password" id="retype_password" placeholder="Retype Password">
+                    <label class="icon">
+                        <span class="fa fa-lock"></span>
+                    </label>
+                    <span id="retype_passwordalt" class="span"></span>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="checkbox1" checked>
+                    <label for="checkbox1">I have agree to the terms and conditions</label>
+                </div>
+
+                <div>
+                    <input type="button" onclick="validation()" name="submit" value="submit"></input>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox2" checked>
+                    <label for="checkbox2" style="font-size: small;">Alredy you have an account?</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
